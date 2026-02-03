@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactLenis } from "@studio-freight/react-lenis";
+import { ReactLenis } from "lenis/react";
 import Link from "next/link";
 import { ArrowLeft, Book, Code, Terminal, Server, Shield } from "lucide-react";
 
@@ -11,8 +11,8 @@ export default function DocumentationPage() {
                 {/* Header */}
                 <header className="fixed top-0 left-0 w-full z-50 border-b border-white/10 bg-[var(--color-background)]/80 backdrop-blur-md">
                     <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-                        <Link 
-                            href="/" 
+                        <Link
+                            href="/"
                             className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors duration-300 group"
                         >
                             <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
@@ -61,7 +61,7 @@ export default function DocumentationPage() {
 
                     {/* Content Sections */}
                     <div className="space-y-16">
-                        
+
                         {/* Game Rules */}
                         <section id="rules" className="prose prose-invert prose-lg max-w-none">
                             <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
@@ -70,10 +70,10 @@ export default function DocumentationPage() {
                             <div className="bg-black/40 border border-white/10 rounded-xl p-8">
                                 <h3 className="text-xl font-bold text-white mb-4">Objective</h3>
                                 <p className="text-gray-300 mb-6">
-                                    <strong>Developers</strong> must fix all bugs in the codebase before time runs out. 
+                                    <strong>Developers</strong> must fix all bugs in the codebase before time runs out.
                                     <strong> Imposters</strong> must sabotage the codebase or eliminate all Developers without being caught.
                                 </p>
-                                
+
                                 <h3 className="text-xl font-bold text-white mb-4">Phases</h3>
                                 <ul className="list-disc pl-6 space-y-2 text-gray-300 marker:text-[var(--color-neon-green)]">
                                     <li><strong>Coding Phase:</strong> Real-time collaborative editing. Developers fix bugs, Imposters introduce them.</li>
@@ -120,7 +120,7 @@ export default function DocumentationPage() {
                                 <p className="text-gray-300 mb-6">
                                     Public endpoints are rate-limited to 100 requests per minute.
                                 </p>
-                                
+
                                 <div className="space-y-6">
                                     <div>
                                         <div className="flex items-center gap-3 mb-2">
@@ -129,7 +129,7 @@ export default function DocumentationPage() {
                                         </div>
                                         <p className="text-gray-400 text-sm">Returns global leaderboard rankings.</p>
                                     </div>
-                                    
+
                                     <div>
                                         <div className="flex items-center gap-3 mb-2">
                                             <span className="bg-[var(--color-neon-blue)]/20 text-[var(--color-neon-blue)] px-2 py-1 rounded text-xs font-mono font-bold">GET</span>
@@ -142,7 +142,7 @@ export default function DocumentationPage() {
                         </section>
 
                     </div>
-                    
+
                     {/* Footer */}
                     <div className="mt-20 pt-10 border-t border-white/10 text-center">
                         <p className="text-gray-500 font-mono text-sm">

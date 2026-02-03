@@ -1,6 +1,6 @@
 "use client";
 
-import { ReactLenis } from "@studio-freight/react-lenis";
+import { ReactLenis } from "lenis/react";
 import { Github, Twitter, Linkedin } from "lucide-react";
 import AnimatedHero from "@/components/landing/AnimatedHero";
 import FeaturesSection from "@/components/landing/FeaturesSection";
